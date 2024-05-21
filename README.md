@@ -1,6 +1,6 @@
 
 # Introduction
-This project documents how you can setup a complete Red Hat OpenShift 4.2 cluster on a single VMware ESXi host machine with Terrraform.  
+This project documents how you can setup a complete Red Hat OpenShift 4.5 cluster on a single VMware ESXi host machine with Terrraform.  
   
 The configuration files and scripts used for the installation are also maintained by this project.  
 
@@ -153,7 +153,7 @@ From the bastion command line as root:
 export KUBECONFIG=~/ocp67/auth/kubeconfig
 oc whoami
 ```
-### Before configuring persistent storage for pvc please follow nfs-provisioning document
+### Before configuring persistent storage for pvc please follow nfs-provisioning(nfs-provisioning.md) document
 ### Configuring storage for the image registry in production clusters
 You must configure storage for the image registry Operator. Because this is production cluster, we set the image registry to persistent volume claim.   
   
